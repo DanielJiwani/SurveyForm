@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title> Survey Form </title>
+</head>
+
+<body>
+
+  <h1 id="title"> Survey Form </h1>
+  <p id="description"> A form to get user feedback. </p>
+
+  <form id="survey-form">
+    <div>
+      <label id='name-label'>Name:</label>
+      <input id="name" required placeholder="Full Name">
+    </div>
+    <div>
+      <label id='email-label'>Email:</label>
+      <input id="email" type="email" required placeholder="Email Address">
+    </div>
+    <div>
+      <label id='number-label'>Age:</label>
+      <input id="number" type="number" min="1" max="100" required placeholder="Age">
+    </div>
+    <div>
+      <label id="dropdown-label">Favorite Language</label>
+      <select id="dropdown">
+        <option></option>
+        <option>JavaScript</option>
+        <option>C</option>
+        <option>C++</option>
+        <option>Java</option>
+      </select>
+    </div>
+    <div>
+      <label>Favorite Learning Style?</label>
+      <div>
+      <input type="radio" name="resource" value="1"><label>YouTube</label>
+      <input type="radio" value="2" name="resource"> <label>Online Courses</label>
+      <input type="radio" value="3" name="resource"> <label>Traditional Education</label>
+      <input type="radio" name="resource" value="4"> <label>Books</label>
+      </div>
+    </div>
+    <div id="checkboxSection">
+      <label>CS Topics to Cover?</label>
+      <div>
+      <input type="checkbox" value="1">  <label>ES6</label>
+      <input type="checkbox" value="2">  <label>D3</label>
+
+      <input type="checkbox" value="3">
+        <label>SASS</label>
+      <input type="checkbox" value="4"> <label>LESS</label>
+        <div>
+    </div>
+        <div>
+      <label>Suggestions   <textarea></textarea></label>
+    </div>
+    <button id="submit">Submit</button>
+  </form>
+  
+</body>  
+</html>
